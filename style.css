@@ -1,0 +1,258 @@
+/* GLOBAL */
+html, body, [class*="css"] {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.stApp {
+    background: #0B0F0C;
+    color: #E8FFF4;
+}
+
+/* MAIN CONTENT */
+.main .block-container {
+    padding-top: 1.2rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-bottom: 2rem;
+    max-width: 100%;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] {
+    background: #101411;
+    border-right: 1px solid rgba(200,255,99,0.08);
+}
+
+section[data-testid="stSidebar"] * {
+    color: #E8FFF4 !important;
+}
+
+section[data-testid="stSidebar"] .stRadio > div {
+    gap: 0.35rem;
+}
+
+/* SIDEBAR RADIO BUTTON LOOK */
+div[role="radiogroup"] > label {
+    background: #121816;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(164,255,206,0.05);
+}
+
+div[role="radiogroup"] > label:hover {
+    background: #171d1a;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+    color: #F5F7F2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.3rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+p, label, div, span {
+    color: #E8FFF4;
+}
+
+/* BUTTONS */
+.stButton > button,
+.stDownloadButton > button {
+    background: #C8FF63;
+    color: #0B0F0C !important;   /* add this line */
+    border: none;
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    font-weight: 700;
+    transition: 0.2s ease;
+    box-shadow: none;
+}
+.stButton > button span,
+.stDownloadButton > button span {
+    color: #000000 !important;   /* BLACK TEXT */
+}
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: #B6F94E;
+    color: #0B0F0C;
+    transform: translateY(-1px);
+}
+
+/* INPUTS */
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"],
+.stMultiSelect div[data-baseweb="select"] {
+    background: #121816 !important;
+    color: #E8FFF4 !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(164,255,206,0.12) !important;
+}
+
+/* FILE UPLOADER */
+[data-testid="stFileUploader"] {
+    background: #121816;
+    border: 1px dashed rgba(164,255,206,0.35);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+/* METRIC CARDS */
+div[data-testid="metric-container"] {
+    background: #88c321;
+    color:black;
+    border-radius: 14px;
+    padding: 1rem 1rem 0.9rem 1rem;
+    border: none;
+    box-shadow: none;
+}
+
+div[data-testid="metric-container"] label,
+div[data-testid="metric-container"] div,
+div[data-testid="metric-container"] p {
+    color: #0B0F0C !important;
+    font-weight: 700;
+}
+
+/* metric label */
+div[data-testid="metric-container"] label {
+    font-size: 0.86rem !important;
+}
+
+/* metric value */
+div[data-testid="stMetricValue"] {
+    font-size: 1.9rem !important;
+    line-height: 1.1 !important;
+}
+
+/* DATAFRAME */
+[data-testid="stDataFrame"] {
+    background: #121816;
+    border-radius: 14px;
+    padding: 0.35rem;
+    border: 1px solid rgba(164,255,206,0.06);
+}
+
+/* PLOTLY CHART WRAPPER */
+.stPlotlyChart {
+    background: #121816;
+    border-radius: 14px;
+    padding: 0.45rem;
+    border: 1px solid rgba(164,255,206,0.05);
+}
+
+/* ALERTS */
+div[data-baseweb="notification"] {
+    border-radius: 12px;
+}
+
+/* CODE BLOCK */
+pre, code {
+    background: #121816 !important;
+    color: #A4FFCE !important;
+    border-radius: 12px !important;
+}
+
+/* PROGRESS */
+.stProgress > div > div > div {
+    background-color: #C8FF63;
+}
+
+/* CUSTOM PANELS */
+.panel {
+    background: #121816;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(164,255,206,0.06);
+    box-shadow: none;
+}
+
+.panel h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #F5F7F2;
+    font-weight: 600;
+}
+
+.panel p {
+    color: #A4FFCE;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* SECTION LABEL */
+.section-title {
+    margin-top: 0.6rem;
+    margin-bottom: 0.45rem;
+    color: #F5F7F2;
+    font-weight: 600;
+    font-size: 1.02rem;
+}
+
+/* TABLE HEADER LOOK */
+thead tr th {
+    color: #A4FFCE !important;
+    font-weight: 600 !important;
+    background: #121816 !important;
+}
+
+/* STATUS COLORS */
+.status-high {
+    color: #00FF9C;
+}
+
+.status-critical {
+    color: #FF4C4C;
+}
+
+.status-medium {
+    color: #FFD166;
+}
+
+/* LOGIN PANEL */
+.login-card {
+    background: #121816;
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid rgba(164,255,206,0.06);
+    box-shadow: none;
+}
+
+/* SMALL TEXT */
+small {
+    color: #A4FFCE;
+}
+
+/* HORIZONTAL LINE */
+hr {
+    border: none;
+    border-top: 1px solid rgba(164,255,206,0.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .main .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+/* REMOVE STREAMLIT TOP HEADER */
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+/* REMOVE EMPTY SPACE ABOVE PAGE */
+.block-container {
+    padding-top: 0rem;
+}
